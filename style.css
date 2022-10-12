@@ -1,0 +1,86 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root { 
+  --primary-color: hsl(var(--base-color), 100%, 63%);
+  --text-color: #ffff;
+  --base-color: 194;
+  --bg-primary-light:hsla(var(--base-color), 100%, 63%, 0.13);
+
+
+  font-size: 62,5;
+}
+
+.play svg path,
+.pause svg path,
+.sound svg path {
+  fill: var(--primary-color);
+}
+
+body {
+  background-image: url(./assets/409548.jpg);
+  background-size: 1500px;
+  color: var(--text-color);
+  font-family: 'Roboto';
+
+  display: grid;
+  min-height: 100vh;
+}
+
+#timer {
+  font-size:clamp(4rem, 4rem + 10vw, 8.8rem) ;
+  display: flex;
+
+}
+button svg {
+
+  width: clamp(3.2rem, 2rem + 12vw, 6.4rem);
+}
+
+main {
+
+align-self: end;
+justify-self: center;
+
+}
+
+footer {
+
+  align-self: end;
+  justify-self: end;
+  padding: 0 1.0rem 2.0rem 0
+
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.hide {
+
+  display: none;
+}
+
+#controls {
+  
+  background-color:var(--bg-primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.2rem;
+
+  border-radius: 9999px;
+
+  width: clamp(10rem, 10rem + 30vw, 22.8rem);
+  height: clamp(8rem, 5rem + 10vw, 8.8rem);
+}
+
+.seconds {
+
+  color: hsl(var(--base-color), 100%, 63%);
+}
